@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgb(172, 244, 249);
+  background: linear-gradient(
+    90deg,
+    rgba(172, 244, 249, 1) 0%,
+    rgba(177, 206, 217, 1) 100%
+  );
+  font-family: Georgia, serif;
+  font-size: large;
+  color: #333;
+}
+.wraper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 5vw;
+}
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: blue;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.review-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+  -webkit-box-shadow: 5px 1px 11px -3px #000000;
+  box-shadow: 5px 1px 11px -3px #000000;
+  border-radius: 2%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.review-wraper img {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 2px -4px 0px 2px rgb(24, 184, 224);
+}
+.name {
+  font-size: x-large;
+  color: #111;
+}
+.info {
+  padding: 1rem;
+}
+.review-wraper button {
+  width: 9rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  align-self: center;
+  background-color: rgb(145, 236, 232);
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 1px 11px -3px #000000;
+  box-shadow: 5px 1px 11px -3px #000000;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: box-shadow 1s, transform 1s;
+}
+.review-wraper svg {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  margin: 1rem;
+  color: rgb(73, 170, 155);
+  background-color: rgb(145, 236, 232);
+  cursor: pointer;
+  transition: color 0.5s, transform 1s;
+}
+.quote-image-wraper svg{
+  background-color: unset;
+  color: rgb(24, 184, 224) ;
+  position: relative;
+  top: -160px;
+  left: -70px;
+}
+.chevron-wraper{
+  display: flex;
+  justify-content: center;
+}
+.review-wraper svg:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+.review-wraper button:hover {
+  -webkit-box-shadow: 5px 1px 11px 3px #000000;
+  box-shadow: 5px 1px 11px 3px #000000;
+  transform: scale(1.01);
+}
